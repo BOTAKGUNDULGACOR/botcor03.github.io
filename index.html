@@ -2,7 +2,7 @@
 <html ⚡>
 <head>
   <meta charset="utf-8">
-  <title>AMP Example</title>
+  <title>AMP Landing Page</title>
   <link rel="canonical" href="https://example.com/amp">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <style amp-boilerplate>
@@ -64,9 +64,75 @@
     </style>
   </noscript>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp-custom>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .hero {
+      background-color: #0073e6;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      margin: 0;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+    }
+    .feature {
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 1rem;
+      width: 30%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, AMP World!</h1>
-  <p>This is a simple AMP HTML page.</p>
+  <header>
+    <h1>My AMP Landing Page</h1>
+  </header>
+  <section class="hero">
+    <h1>Welcome to My Landing Page</h1>
+    <p>This is the hero section of the landing page.</p>
+  </section>
+  <section class="features">
+    <div class="feature">
+      <h2>Feature 1</h2>
+      <p>Description of feature 1.</p>
+    </div>
+    <div class="feature">
+      <h2>Feature 2</h2>
+      <p>Description of feature 2.</p>
+    </div>
+    <div class="feature">
+      <h2>Feature 3</h2>
+      <p>Description of feature 3.</p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 My AMP Landing Page</p>
+  </footer>
 </body>
 </html>
